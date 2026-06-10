@@ -1,12 +1,12 @@
-# Executive Summary
+# TLDR 
 
 Agentic coding has improved a lot in the past year, but I wanted to understand for myself how far it's come. In March 2026, I reimplemented the same ~800 line Python Puzzle Generator program more than 9 times across three AI coding approaches, measuring active developer time for each.
 
-| Approach | Time | Key Tradeoff |
-|:---|:---|:---|
-| Agent Driven | 7h 0m | Good for prototyping, but nearly 3x slower than human driven |
-| Agent Driven w/ Test Suite | 2h 41m | High autonomy, but requires writing tests upfront |
-| Human Driven | 2h 27m | Fastest and best for iteration, but requires full attention |
+| Approach                   | Time   | Key Tradeoff                                                 |
+| :------------------------- | :----- | :----------------------------------------------------------- |
+| Agent Driven               | 7h 0m  | Good for prototyping, but nearly 3x slower than human driven |
+| Agent Driven w/ Test Suite | 2h 41m | High autonomy, but requires writing tests upfront            |
+| Human Driven               | 2h 27m | Fastest and best for iteration, but requires full attention  |
 
 **Agent Driven:** An agent drove the full implementation from an open-ended prompt. It felt productive in the moment, but it was nearly 3x slower than the human driven approach. The time was dominated by reviewing and correcting the agent's output, which is significantly harder and more draining than just writing the code yourself. The constant context switching while waiting for the agent to finish tasks also broke my flow in a way that shouldn't be understated. This approach is useful for prototyping and exploring unfamiliar domains, but a nearly 3x slowdown on an 800-line program should give anyone pause about using it for real work.
 
